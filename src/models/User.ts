@@ -48,9 +48,6 @@ const userSchema = new Schema<IUser>({
   timestamps: true
 });
 
-// Index for email lookups
-userSchema.index({ email: 1 });
-
 // Index for reset token lookups
 userSchema.index({ resetPasswordToken: 1 });
 
